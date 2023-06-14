@@ -1,9 +1,15 @@
 <script>
-    const letra = (prompt("Informe uma letra"))
-    if (letra === "a" && "e" && "i" && "o" && "u" ) {
-        alert ("vogal")
+    const letra = (prompt("Informe uma letra").trim().toUpperCase())
+if (letra.length == 1) {
+    if (letra == "a" || letra == "e" || letra == "i" || letra == "o" ||  letra == "u" ) {
+        alert (` A letra ${letra} é vogal`);
     }
     else {
-        alert ("consoante")
+        alert (` A letra ${letra} não é uma vogal`);
     }
+} 
+else {
+    alert(` Informe apenas uma letra`);
+}
+
 </script>

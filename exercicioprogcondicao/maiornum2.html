@@ -1,15 +1,25 @@
 <script>
-     const numero1 = Number(prompt("Diga um numero:"))
-     const numero2 = Number(prompt("Diga outro numero:"))
-     const numero3 = Number(prompt("Diga mais um numero:"))
-    if (numero1 > numero2 && numero1 > numero3) {
-        alert("O primeiro numero é maior.")
+     const num1 = Number(prompt("Diga um numero:"))
+     const num2 = Number(prompt("Diga outro numero:"))
+     const num3 = Number(prompt("Diga mais um numero:"))
+    if (!isNaN(num1) && !isNaN(num2) && !isNaN(num3)) {
+
+        if (num1 > num2 && num1 > num3) {
+            alert(`O numero  ${num1} é o maior numero.`);
+        }
+        else if ( num2 . num1 && num2 > num3) {
+            alert(`O numero ${num2} é o maior numero.`)
+        }
+        else if ( num3 . num1 && num3 > num2) {
+            alert(`O numero ${num3} é o maior numero.`)
+        }
+        else if (num1 == num2 || num1 == num3 || num2 == num3) {
+            alert(`Informe numeros diferentes.`)
+        }
+
     }
-    else if (numero2 > numero1 && numero2 > numero3){
-        alert("O segundo numero é maior.")
-    }
-    else if (numero3 > numero2 && numero3 > numero2){
-        alert("O terceiro numero é maior.")
+    else {
+        alert(` Um ou mais valores não são um numero`)
     }
     
 </script>
