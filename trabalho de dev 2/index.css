@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+
+}
+     div.a{
+        text-align: left;
+        font-size: 40px;
+     }
+     div.a a{
+        margin-right: 30px;
+     }
+     body{
+        background-color: black;
+        font-family: 'Bebas Neue', sans-serif;
+     }
+     a.texto{
+        color: white;
+     }
+        
+ 
